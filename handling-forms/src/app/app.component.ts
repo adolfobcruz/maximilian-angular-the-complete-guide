@@ -7,7 +7,7 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  signUpForm  = FormGroup;
+  signUpForm: FormGroup;
   genders = ['male', 'female'];
 
   ngOnInit() {
