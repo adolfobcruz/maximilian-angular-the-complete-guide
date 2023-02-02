@@ -14,6 +14,7 @@ export class AppComponent {
   onToggleDetails() {
     this.showDetails = !this.showDetails;
 
-    this.logs.push(this.logs.length + 1);
+    // this.logs.push(this.logs.length + 1);
+    this.logs.push(new Date());
   }
 }
