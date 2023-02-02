@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  showDetails: boolean = false;
+  logs = [];
+
+  constructor() {}
+
+  onToggleDetails() {
+    this.showDetails = !this.showDetails;
+
+    this.logs.push(this.logs.length + 1);
+  }
 }
