@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  serverElements = [];
+  serverElements = [
+    {
+      type: 'server',
+      name: 'Testserver1',
+      content: 'Just a test1!'
+    },
+    {
+      type: 'blueprint',
+      name: 'Testserver2',
+      content: 'Just a test2!'
+    },
+  ];
 }
