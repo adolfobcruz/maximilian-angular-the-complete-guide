@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
   loadedPosts = [];
@@ -15,12 +15,14 @@ export class AppComponent implements OnInit {
 
   onCreatePost(postData: { title: string; content: string }) {
     // Send Http request
-    this.http.post(
-      'https://angular-making-http-request-default-rtdb.firebaseio.com/posts.json',
-      postData
-    ).subscribe(responseData => {
-      console.log(responseData);
-    });
+    this.http
+      .post(
+        'https://lab-angular-maximilian-default-rtdb.firebaseio.com/posts.json',
+        postData
+      )
+      .subscribe((responseData) => {
+        console.log(responseData);
+      });
   }
 
   onFetchPosts() {
