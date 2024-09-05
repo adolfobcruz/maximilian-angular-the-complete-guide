@@ -17,7 +17,7 @@ export class AppComponent {
   @Output() select = new EventEmitter<string>();
 
   users = DUMMY_USERS;
-  selectUserId = 'u1';
+  selectUserId = 'u3';
 
   get selectedUser() {
     return this.users.find((user) => user.id === this.selectUserId)!;
