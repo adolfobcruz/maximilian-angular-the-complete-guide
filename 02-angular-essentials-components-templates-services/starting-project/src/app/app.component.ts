@@ -17,13 +17,13 @@ export class AppComponent {
   @Output() select = new EventEmitter<string>();
 
   users = DUMMY_USERS;
-  selectUserId?: string;
+  selectedUserId?: string;
 
   get selectedUser() {
-    return this.users.find((user) => user.id === this.selectUserId)!;
+    return this.users.find((user) => user.id === this.selectedUserId)!;
   }
 
   onSelectUser(id: string) {
-    this.selectUserId = id;
+    this.selectedUserId = id;
   }
 }
