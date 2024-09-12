@@ -15,7 +15,6 @@ import { DUMMY_USERS } from './dummy-users';
 })
 export class AppComponent {
   @Output() select = new EventEmitter<string>();
-
   users = DUMMY_USERS;
   selectedUserId?: string;
 
