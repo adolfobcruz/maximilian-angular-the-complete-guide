@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 
-import { NewTaskData } from './task/task.model';
 import { TasksService } from './tasks.service';
 
 import { TaskComponent } from './task/task.component';
@@ -31,9 +30,5 @@ export class TasksComponent {
 
   onCloseAddTask() {
     this.isAddingTask = false;
-  }
-
-  onCompleteTask(id: string) {
-
   }
 }
